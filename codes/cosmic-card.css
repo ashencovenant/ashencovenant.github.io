@@ -1,0 +1,87 @@
+/*
+Code by @ashencovenant
+Uploaded: 04/14/2025
+
+Do not copy or use as a base.
+Do not remove credits.
+
+Site: https://ashencovenant.tumblr.com/
+Support me: https://ko-fi.com/ashencovenant
+*/
+
+:root {
+   --coscar-svg: url(https://dl.dropboxusercontent.com/scl/fi/1ndbdcuqzmzfrpa7fs9q1/card-line-2.svg?rlkey=o8jefag5llyhe2vb4a2cz1dqf&st=xjyainc2&dl=0);
+   --coscar-bg: #080808;
+}
+
+/**/
+#ashncodes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ashncodes .cosmic-card {
+    width: 450px;
+    height: 600px;
+    background: var(--coscar-bg);
+    display: flex;
+    margin: 20px auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#ashncodes .cosmic-card::selection {
+    background: var(--coscar-col);
+    color: var(--coscar-bg);
+}
+#ashncodes .cosmic-card ccli {
+    width: 100%;
+    height: 100%;
+    mask-image: var(--coscar-svg);
+    mask-size: cover 100%;
+    mask-repeat: no-repeat;
+    background: var(--coscar-col);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#ashncodes .cosmic-card-titu {
+    font: 12px Calibri;
+    text-transform: uppercase;
+    position: absolute;
+    max-width: 330px;
+    text-align: center;
+    top: 18px;
+    color: var(--coscar-col);
+    background: var(--coscar-bg);
+    padding: 0px 10px;
+}
+
+#ashncodes .cosmic-card-txt {
+    font: 13px Calibri;
+    text-align: justify;
+    color: var(--coscar-txt);
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    overflow: auto;
+    padding-right: 5px;
+}
+
+#ashncodes .cosmic-card-txt::-webkit-scrollbar {
+    width: 1px;
+    background: transparent!important;
+}
+#ashncodes .cosmic-card-txt::-webkit-scrollbar-thumb {
+    background: var(--coscar-col);
+}
+
+#ashncodes a.accred {
+  font: 9px Calibri;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
