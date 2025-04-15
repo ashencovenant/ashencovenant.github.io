@@ -1,0 +1,63 @@
+#ashncodes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ashncodes .whitespace {
+    width: 600px;
+    min-height: 300px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0px;
+    position: relative;
+}
+
+#ashncodes .whitespace .whsp-tl {
+  font: 40px Aesthetic;
+  text-transform: capitalize;
+  width: 400px;
+  text-align: left;
+}
+#ashncodes .whitespace .whsp-tl l1 {
+  text-transform: uppercase;
+}
+
+#ashncodes .whitespace .whsp-st {
+  font: 9px Tahoma;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 10px;
+  margin-bottom: 5px;
+  width: 400px;
+  text-align: right;
+}
+
+#ashncodes .whsp-img {
+    width: 400px;
+    height: 150px;
+    background-size: cover!important;
+  background-position: center!important;
+    filter: grayscale(100%);
+}
+
+#ashncodes .whsp-txt {
+  width: 400px;
+  font: 13px Calibri;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+#ashncodes a.accred {
+  font: 9px Calibri;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  text-decoration: none;
+}
