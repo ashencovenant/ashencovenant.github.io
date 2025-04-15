@@ -1,0 +1,88 @@
+/*
+Code by @ashencovenant
+Uploaded: 15/04/2025
+
+Do not copy or use as a base.
+Do not remove credits.
+
+Site: https://ashencovenant.tumblr.com/
+Support me: https://ko-fi.com/ashencovenant
+*/
+
+#ashncodes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ashncodes .blackspace {
+    width: 600px;
+    min-height: 300px;
+    background: #101010;
+    color: #fff;
+    border: 1px solid #2d2d2d;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0px;
+    position: relative;
+}
+#ashncodes .blackspace .bksp-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+}
+#ashncodes .blackspace .bksp-img1 {
+  width: 300px;
+  height: 300px;
+  background-size: cover !important;
+}
+#ashncodes .blackspace .bksp-img2 {
+  width: 300px;
+  height: 300px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ashncodes .blackspace .bksp-img2 lm {
+  font: 50px Wild Ones;
+  position: relative;
+  z-index: 2
+}
+#ashncodes .blackspace .bksp-img2 lmi {
+  font: 8px Tahoma;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-top: -10px;
+  position: relative;
+  z-index: 2
+}
+
+#ashncodes .blackspace .bksp-img2 lic {
+  font-size: 20px;
+}
+
+#ashncodes .blackspace .bksp-txt {
+  font: 13px Calibri;
+  text-align: justify;
+  width: 80%;
+  margin-top: 50px;
+}
+
+#ashncodes a.accred {
+  font: 9px Calibri;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  text-decoration: none;
+}
