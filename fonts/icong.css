@@ -1,11 +1,17 @@
 @font-face {
   font-family: 'icong';
-  src: url('../font/icong.eot?49988850');
-  src: url('../font/icong.eot?49988850#iefix') format('embedded-opentype'),
-       url('../font/icong.woff2?49988850') format('woff2'),
-       url('../font/icong.woff?49988850') format('woff'),
-       url('../font/icong.ttf?49988850') format('truetype'),
-       url('../font/icong.svg?49988850#icong') format('svg');
+  src: url('https://ashencovenant.github.io/fonts
+/icong.eot');
+  src: url('https://ashencovenant.github.io/fonts
+/icong.eot#iefix') format('embedded-opentype'),
+       url('https://ashencovenant.github.io/fonts
+/icong.woff2') format('woff2'),
+       url('https://ashencovenant.github.io/fonts
+/icong.woff') format('woff'),
+       url('https://ashencovenant.github.io/fonts
+/icong.ttf') format('truetype'),
+       url('https://ashencovenant.github.io/fonts
+/icong.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
