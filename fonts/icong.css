@@ -1,17 +1,9 @@
 @font-face {
   font-family: 'icong';
-  src: url('https://ashencovenant.github.io/fonts
-/icong.eot');
-  src: url('https://ashencovenant.github.io/fonts
-/icong.eot#iefix') format('embedded-opentype'),
-       url('https://ashencovenant.github.io/fonts
-/icong.woff2') format('woff2'),
-       url('https://ashencovenant.github.io/fonts
-/icong.woff') format('woff'),
-       url('https://ashencovenant.github.io/fonts
-/icong.ttf') format('truetype'),
-       url('https://ashencovenant.github.io/fonts
-/icong.svg') format('svg');
+  src: url('https://dl.dropboxusercontent.com/scl/fi/n63oq924b2v4pw479vfbr/icong.eot?rlkey=ujpznk13yt7do534nsjswhpah&st=sqgxpwnf&dl=0') format('embedded-opentype'),
+       url('https://dl.dropboxusercontent.com/scl/fi/bq6nz087nbgk4ueq4bv9e/icong.woff2?rlkey=28evj5vrb54290tmzra8e775s&st=68febygo&dl=0') format('woff2'),
+       url('https://dl.dropboxusercontent.com/scl/fi/uk7lbcait9tmucmj6rj8g/icong.woff?rlkey=bsxw6433efmybsl1x7j027irx&st=pflqggsn&dl=0') format('woff'),
+       url('https://dl.dropboxusercontent.com/scl/fi/8octqepb3v0cczwoj0zim/icong.ttf?rlkey=ku9elawf2fpm7xa1dkegp08rt&st=evf06f7i&dl=0') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
