@@ -814,3 +814,9 @@ None of the sources here are my own; each belongs to their respective authors.
 @font-face {font-family: Ilyas; src: url('https://dl.dropboxusercontent.com/scl/fi/0daqxmb9m2sg3w82ymmkp/ILYAS.OTF?rlkey=ghzxphgivhd66seaux95g8lgz&st=qqjwjt1p&dl=0'); format('embedded-opentype');font-display: swap;}
 @font-face {font-family: Young Vigor; src: url('https://dl.dropboxusercontent.com/s/pqgmjxau9sojzk8/Young%20Vigor.ttf'); format('truetype');font-display: swap;}
 
+/*------------ ICON FONT BY @ASHENCOVENANT */
+@font-face {font-family: Ashencovenant; src: url('https://dl.dropboxusercontent.com/scl/fi/rujpm4tbo7phrgycq0bnv/ashencovenant.ttf?rlkey=u4anmo7cnipimq704a3k4jrhr&st=91ttqz8c&dl=0'); format('truetype');font-display: swap;font-weight:400;font-style:normal}
+
+.ac:before,[data-icon]:before{font-family:"Ashencovenant"!important;content:attr(data-icon);font-style:normal!important;font-weight:400!important;font-variant:normal!important;text-transform:none!important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class^="ac-"]:before,[class*=" ac-"]:before{font-family:"Ashencovenant"!important;font-style:normal!important;font-weight:400!important;font-variant:normal!important;text-transform:none!important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+.ac-skull:before{content:"\e900"}
