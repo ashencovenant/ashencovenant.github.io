@@ -815,8 +815,37 @@ None of the sources here are my own; each belongs to their respective authors.
 @font-face {font-family: Young Vigor; src: url('https://dl.dropboxusercontent.com/s/pqgmjxau9sojzk8/Young%20Vigor.ttf'); format('truetype');font-display: swap;}
 
 /*------------ ICON FONT BY @ASHENCOVENANT */
-@font-face {font-family: Ashencovenant; src: url('https://dl.dropboxusercontent.com/scl/fi/rujpm4tbo7phrgycq0bnv/ashencovenant.ttf?rlkey=u4anmo7cnipimq704a3k4jrhr&st=91ttqz8c&dl=0'); format('truetype');font-display: swap;font-weight:400;font-style:normal}
+@font-face {
+  font-family: 'ashencovenant';
+  src: url('https://dl.dropboxusercontent.com/scl/fi/74thwh7mnk8037gozczhv/ashencovenant.eot?rlkey=9bwn6vg0bp04z2iiaimhov758&st=g5szeye5&dl=0');
+  src: url('https://dl.dropboxusercontent.com/scl/fi/74thwh7mnk8037gozczhv/ashencovenant.eot?rlkey=9bwn6vg0bp04z2iiaimhov758&st=g5szeye5&dl=0#iefix') format('embedded-opentype'),
+       url('https://dl.dropboxusercontent.com/scl/fi/th44cphyrdaob9dmhoioe/ashencovenant.woff2?rlkey=z1j0syd76m24hntv1nx9y7o5k&st=mmdml2pt&dl=0') format('woff2'),
+       url('https://dl.dropboxusercontent.com/scl/fi/brdgojfthyzvo5aw64w9n/ashencovenant.woff?rlkey=0qqrtxl9v4i41mk3zi397uomj&st=cx0uywow&dl=0') format('woff'),
+       url('https://dl.dropboxusercontent.com/scl/fi/rujpm4tbo7phrgycq0bnv/ashencovenant.ttf?rlkey=u4anmo7cnipimq704a3k4jrhr&st=ms0jqkuk&dl=0') format('truetype'),
+       url('https://dl.dropboxusercontent.com/scl/fi/lobvjsri28y4e640pleku/ashencovenant.svg?rlkey=87zs3y8um3cdn5ggfew29vuh7&st=bhbichrl&dl=0#ashencovenant') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-.ac:before,[data-icon]:before{font-family:"Ashencovenant"!important;content:attr(data-icon);font-style:normal!important;font-weight:400!important;font-variant:normal!important;text-transform:none!important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class^="ac-"]:before,[class*=" ac-"]:before{font-family:"Ashencovenant"!important;font-style:normal!important;font-weight:400!important;font-variant:normal!important;text-transform:none!important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+[class^="ac-"]:before, [class*=" ac-"]:before {
+  font-family: "ashencovenant";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
 
-.ac-skull:before{content:"\e900"}
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+.ac-ashencovenant:before { content: '\e800'; } 
