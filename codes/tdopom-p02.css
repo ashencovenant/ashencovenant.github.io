@@ -1,0 +1,164 @@
+/*
+Code by @ashencovenant
+Uploaded: 14/07/2026
+
+Do not copy or use as a base.
+Do not remove credits.
+
+Site: https://ashencovenant.tumblr.com/
+Support me: https://ko-fi.com/ashencovenant
+*/
+
+       /* ==========================================
+       2. HOJA DE ESTILOS (CSS ESTRUCTURAL)
+       ========================================== */
+    .tdopom1 {
+      max-width: 560px;
+      margin: 30px auto;
+      background-color: var(--tdopom1-bg);
+      border: 1px solid var(--tdopom1-borde);
+      box-sizing: border-box;
+      padding: 30px;
+      font-family: var(--tdopom1-font-body);
+      color: var(--tdopom1-texto);
+      font-size: 13px;
+      line-height: 1.8;
+      position: relative;
+    }
+    .tdopom1-cabecera {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      gap: 20px;
+    }
+    .tdopom1-img-offset {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      flex-shrink: 0;
+    }
+    .tdopom1-img-offset::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -6px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--tdopom1-acento);
+      z-index: 1;
+      pointer-events: none;
+    }
+    .tdopom1-avatar {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+      border: 1px solid var(--tdopom1-borde);
+      filter: grayscale(100%) contrast(110%);
+    }
+    .tdopom1-titulos {
+      flex-grow: 1;
+      text-align: right;
+    }
+    .tdopom1-track-num {
+      font-family: var(--tdopom1-font-body);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--tdopom1-acento);
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .tdopom1-name {
+      font-family: var(--tdopom1-font-header);
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.1;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .tdopom1-sub {
+      font-family: var(--tdopom1-font-body);
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--tdopom1-texto-mutado);
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
+    .tdopom1-layout {
+      display: grid;
+      grid-template-columns: 1fr 140px;
+      gap: 25px;
+    }
+    @media (max-width: 480px) {
+      .tdopom1-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+    .tdopom1-col-texto {
+      text-align: justify;
+    }
+    .tdopom1-dialog {
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 500;
+      font-style: italic;
+      margin: 20px 0;
+      padding: 0 15px;
+      border-left: 1px solid var(--tdopom1-acento);
+      position: relative;
+    }
+    .tdopom1-col-side {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .tdopom1-side-banner {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border: 1px solid var(--tdopom1-borde);
+      filter: grayscale(100%) contrast(120%) brightness(85%);
+      transition: filter 0.5s ease;
+    }
+    .tdopom1-side-banner:hover {
+      filter: grayscale(0%) contrast(100%) brightness(100%);
+    }
+    .tdopom1-side-meta {
+      border-top: 1px solid var(--tdopom1-borde);
+      padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .tdopom1-meta-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .tdopom1-meta-label {
+      font-size: 8px;
+      color: var(--tdopom1-texto-mutado);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .tdopom1-meta-val {
+      font-size: 10px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+      /* =======================================================
+      CRÉDITOS (NO RETIRAR)
+       ======================================================= */
+    .ashencovenant-cred {
+      position: absolute;
+      bottom: -20px;
+      right: 0px;
+      font: 10px Calibri;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
