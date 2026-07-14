@@ -1,0 +1,232 @@
+/*
+Code by @ashencovenant
+Uploaded: 14/07/2026
+
+Do not copy or use as a base.
+Do not remove credits.
+
+Site: https://ashencovenant.tumblr.com/
+Support me: https://ko-fi.com/ashencovenant
+*/
+
+
+/* =======================================================
+       ESTILOS DEL CONTENEDOR
+       ======================================================= */
+    .lovedeath {
+      max-width: 550px;
+      margin: 30px auto;
+      background-color: var(--lovedeath-bg);
+      border: 1px solid var(--lovedeath-borde);
+      box-sizing: border-box;
+      padding: 30px;
+      font-family: var(--lovedeath-font-lectura);
+      color: var(--lovedeath-texto);
+      font-size: 13px;
+      line-height: 1.8;
+      position: relative;
+    }
+
+    /* =======================================================
+       IMÁGENES Y CABECERA (ASIMÉTRICA)
+       ======================================================= */
+    .lovedeath-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid var(--lovedeath-borde);
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 480px) {
+      .lovedeath-header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* Imagen cuadrada de avatar lateral */
+    .lovedeath-avatar {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 1px solid var(--lovedeath-borde);
+      filter: grayscale(100%) contrast(115%);
+      transition: all 0.4s ease;
+    }
+
+    .lovedeath-avatar:hover {
+      filter: grayscale(0%) contrast(100%);
+      border-color: var(--lovedeath-acento);
+    }
+
+    .lovedeath-header-meta {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .lovedeath-track-num {
+      font-size: 9px;
+      color: var(--lovedeath-acento);
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .lovedeath-char-name {
+      font-family: var(--lovedeath-font-titulo);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--lovedeath-texto-claro);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
+
+    .lovedeath-char-sub {
+      font-size: 10px;
+      color: var(--lovedeath-texto-mutado);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 5px;
+    }
+
+    /* =======================================================
+       IMAGEN / BANNER DE AMBIENTACIÓN INTERNO
+       ======================================================= */
+    .lovedeath-banner {
+      width: 100%;
+      height: 120px;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid var(--lovedeath-borde);
+      margin-bottom: 25px;
+      filter: grayscale(100%) brightness(80%);
+      opacity: 0.8;
+      transition: all 0.4s ease;
+    }
+
+    .lovedeath-banner:hover {
+      filter: grayscale(30%) brightness(100%);
+      opacity: 1;
+    }
+
+    /* =======================================================
+       CUERPO DE ESCRITURA
+       ======================================================= */
+    .lovedeath-body {
+      text-align: justify;
+      color: var(--lovedeath-texto);
+      letter-spacing: 0.2px;
+    }
+
+    /* Diálogos con estilo de cita grunge minimalista */
+    .lovedeath-dialogue {
+      font-size: 13.5px;
+      color: var(--lovedeath-texto-claro);
+      font-weight: 500;
+      font-style: italic;
+      margin: 20px 0;
+      padding: 12px 18px;
+      background-color: var(--lovedeath-bg-caja);
+      border-left: 2px solid var(--lovedeath-acento);
+      border-right: 1px solid var(--lovedeath-borde);
+      border-top: 1px solid var(--lovedeath-borde);
+      border-bottom: 1px solid var(--lovedeath-borde);
+    }
+
+    /* =======================================================
+       REPRODUCTOR ESTÉTICO (Bad Omens theme)
+       ======================================================= */
+    .lovedeath-player {
+      background-color: var(--lovedeath-bg-caja);
+      border: 1px solid var(--lovedeath-borde);
+      margin-top: 30px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    @media (max-width: 480px) {
+      .lovedeath-player {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .lovedeath-player-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .lovedeath-player-icon {
+      color: var(--lovedeath-acento);
+      font-size: 14px;
+    }
+
+    .lovedeath-player-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lovedeath-player-song {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--lovedeath-texto-claro);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .lovedeath-player-lyrics {
+      font-size: 11px;
+      font-style: italic;
+      color: var(--lovedeath-texto-mutado);
+      margin-top: 2px;
+    }
+
+    .lovedeath-player-controls {
+      display: flex;
+      gap: 12px;
+      color: var(--lovedeath-texto-mutado);
+      font-size: 10px;
+    }
+
+    .lovedeath-player-controls i {
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .lovedeath-player-controls i:hover {
+      color: var(--lovedeath-acento);
+    }
+
+    /* =======================================================
+       PIE DE PÁGINA (DATOS TÉCNICOS)
+       ======================================================= */
+    .lovedeath-footer {
+      border-top: 1px solid var(--lovedeath-borde);
+      margin-top: 25px;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--lovedeath-texto-mutado);
+    }
+
+    .lovedeath-footer-item span {
+      color: var(--lovedeath-texto-claro);
+      font-weight: 500;
+    }
+
+    .lovedeath-footer-item i {
+      color: var(--lovedeath-acento);
+      margin-right: 5px;
+    }
