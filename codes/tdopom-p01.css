@@ -230,3 +230,15 @@ Support me: https://ko-fi.com/ashencovenant
       color: var(--lovedeath-acento);
       margin-right: 5px;
     }
+
+    /* =======================================================
+      CRÉDITOS (NO RETIRAR)
+       ======================================================= */
+    .ashencovenant-cred {
+      position: absolute;
+      bottom: -20px;
+      right: 0px;
+      font: 10px Calibri;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
