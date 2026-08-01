@@ -188,6 +188,7 @@ Support me: https://ko-fi.com/ashencovenant
   height: 70px;
   background-size: cover !important;
   border: 10px solid var(--ash-lm-cb);
+  color: var(--ash-lm-c1);
 }
 .lm-infb2 {
   background: var(--ash-lm-cb);
