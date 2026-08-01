@@ -227,9 +227,13 @@ Support me: https://ko-fi.com/ashencovenant
 
 .lm-infdatb i {
   border: 1px solid var(--ash-lm-ca);
-  padding: 5px;
-  font-size: 11px;
+  font-size: 10px;
+  width: 25px;
   color: var(--ash-lm-ca);
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lm-infdatb h {
