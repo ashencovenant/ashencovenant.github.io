@@ -990,3 +990,13 @@ None of the sources here are my own; each belongs to their respective authors.
 }
 
 .ac-ashencovenant:before { content: '\e800'; } 
+
+#ashncodes a.accred {
+  font: 9px Calibri;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  text-decoration: none;
+}
