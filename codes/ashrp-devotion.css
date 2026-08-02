@@ -1,0 +1,124 @@
+/*
+Code by @ashencovenant
+Uploaded: 02/08/2026
+Do not remove credits.
+Site: https://ashencovenant.tumblr.com/
+Support me: https://ko-fi.com/ashencovenant
+*/
+
+
+/* --- CSS PRINCIPAL --- */ 
+
+.ashrp-art-container {
+  max-width: 540px;
+  margin: 30px auto;
+  background-color: var(--ashrp-bg-outer);
+  border: 1px solid var(--ashrp-border);
+  padding: 35px 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.ashrp-art-card {
+  background-color: var(--ashrp-bg-inner);
+  border: 1px solid var(--ashrp-border);
+  padding: 40px 35px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.ashrp-flower-icon {
+  font-size: 1.5rem;
+  color: var(--ashrp-accent-flower);
+  display: inline-block;
+  opacity: 0.85;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Título (Cormorant Garamond) */
+.ashrp-main-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--ashrp-title-color);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.ashrp-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--ashrp-accent-flower);
+  margin-bottom: 30px;
+}
+.ashrp-divider {
+  width: 40px;
+  height: 1px;
+  background-color: var(--ashrp-accent-flower);
+  margin: 0 auto 35px auto;
+  opacity: 0.4;
+}
+  
+.ashrp-details-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 35px;
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ashrp-text-dark);
+}
+
+.ashrp-detail-val {
+  color: var(--ashrp-text-main);
+  font-weight: 500;
+}
+  
+.ashrp-role-body {
+  font-size: 14px;
+  font-family: "Source Sans 3";
+  color: var(--ashrp-text-main);
+  text-align: justify;
+}
+
+.ashrp-bodytxt {
+  margin-bottom: 22px;
+  text-indent: 20px;
+}
+
+.ashrp-bodytxt:last-child {
+  margin-bottom: 0;
+}
+
+.ashrp-bodytxt strong, .ashrp-bodytxt em {
+  color: var(--ashrp-accent-flower);
+}
+  
+.ashrp-art-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--ashrp-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ashrp-text-dark);
+}
+
+.ashrp-tag {
+  background-color: var(--ashrp-accent-soft);
+  color: var(--ashrp-accent-flower);
+  padding: 4px 10px;
+  border-radius: 2px;
+}
