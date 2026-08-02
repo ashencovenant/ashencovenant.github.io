@@ -18,6 +18,7 @@ Support me: https://ko-fi.com/ashencovenant
   box-shadow: 0 15px 35px rgba(0,0,0,0.5);
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+  position: relative;
 }
 
 .ashrp-art-card {
