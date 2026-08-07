@@ -304,3 +304,9 @@ Support me: https://ko-fi.com/ashencovenant
   text-transform: uppercase;
   font-weight: 900;
 }
+
+.lminfbsuperior {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
