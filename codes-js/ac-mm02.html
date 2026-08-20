@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0-beta3/css/pro.min.css">
+  <style>
+    .ac-mm02-player-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      padding: 0;
+    }
+
+    .ac-mm02-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #ac-mm02-musictrigger { display: none !important; }
+
+    .ac-mm02-playbtn i {
+      color: var(--pptradke-cm2, #bbb9b9);
+      font-size: var(--play-size, 24px);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      line-height: 1;
+    }
+    .ac-mm02-playbtn i:hover { transform: scale(1.15); }
+
+    .icon-play { display: inline-block !important; }
+    .icon-pause { display: none !important; }
+
+    #ac-mm02-musictrigger:checked + .ac-mm02-playbtn .icon-play { display: none !important; }
+    #ac-mm02-musictrigger:checked + .ac-mm02-playbtn .icon-pause { display: inline-block !important; }
+  </style>
+</head>
+<body>
+
+  <div class="ac-mm02-player-card">
+    <audio id="ac-mm02-audio"></audio>
+
+    <div class="ac-mm02-controls">
+      <input type="checkbox" id="ac-mm02-musictrigger">
+      <label for="ac-mm02-musictrigger" class="ac-mm02-playbtn">
+        <i class="fa-solid fa-play icon-play"></i>
+        <i class="fa-solid fa-pause icon-pause"></i>
+      </label>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const audioUrl = params.get('song');
+    let colorHex = params.get('cm2') || params.get('color') || 'bbb9b9';
+    let playSize = params.get('ps') || '24px';
+
+    colorHex = colorHex.replace('#', '');
+    document.documentElement.style.setProperty('--pptradke-cm2', '#' + colorHex);
+    document.documentElement.style.setProperty('--play-size', playSize.includes('px') ? playSize : playSize + 'px');
+
+    const audio = document.getElementById('ac-mm02-audio');
+    const trigger = document.getElementById('ac-mm02-musictrigger');
+
+    if (audioUrl) { audio.src = audioUrl; }
+
+    trigger.addEventListener('change', () => {
+      trigger.checked ? audio.play() : audio.pause();
+    });
+
+    audio.addEventListener('ended', () => {
+      trigger.checked = false;
+    });
+  </script>
+</body>
+</html>
