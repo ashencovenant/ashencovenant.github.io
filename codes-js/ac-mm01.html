@@ -4,10 +4,20 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0-beta3/css/pro.min.css">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: transparent; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    
+    .ac-mm01-player-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 5px;
+    }
+
     .ac-mm01-progress-container {
       position: relative;
       width: 100%;
-      height: 20px; 
+      height: 20px;
       display: flex;
       align-items: center;
       cursor: pointer;
@@ -35,7 +45,7 @@
       position: absolute;
       left: 0%;
       top: 50%;
-      transform: translate(-50%, -50%); 
+      transform: translate(-50%, -50%);
       color: var(--pptradke-cm2, #bbb9b9);
       font-size: var(--thumb-size, 12px);
       line-height: 1;
@@ -109,13 +119,17 @@
     const params = new URLSearchParams(window.location.search);
     const audioUrl = params.get('song');
     let colorHex = params.get('cm2') || params.get('color') || 'bbb9b9';
+    let timeColorHex = params.get('tc') || colorHex;
     let barHeight = params.get('bh') || '4px';
     let thumbSize = params.get('ts') || '12px';
     let playSize = params.get('ps') || '20px';
     let customIcon = params.get('icon') || 'fa-circle';
 
     colorHex = colorHex.replace('#', '');
+    timeColorHex = timeColorHex.replace('#', '');
+
     document.documentElement.style.setProperty('--pptradke-cm2', '#' + colorHex);
+    document.documentElement.style.setProperty('--time-color', '#' + timeColorHex);
     document.documentElement.style.setProperty('--bar-height', barHeight.includes('px') ? barHeight : barHeight + 'px');
     document.documentElement.style.setProperty('--thumb-size', thumbSize.includes('px') ? thumbSize : thumbSize + 'px');
 
