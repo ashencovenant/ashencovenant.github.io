@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0-beta3/css/pro.min.css">
-  <style>    
+  <style>
     .ac-mm01-player-card {
       display: flex;
       flex-direction: column;
@@ -42,7 +42,7 @@
       left: 0%;
       top: 50%;
       transform: translate(-50%, -50%);
-      color: var(--pptradke-cm2, #bbb9b9);
+      color: var(--color-thumb, #bbb9b9);
       font-size: var(--thumb-size, 12px);
       line-height: 1;
       display: flex;
@@ -114,17 +114,22 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const audioUrl = params.get('song');
-    let colorHex = params.get('cm2') || params.get('color') || 'bbb9b9';
-    let timeColorHex = params.get('tc') || colorHex;
+    
+    let colorHex_cm2 = params.get('cm2') || params.get('color') || 'bbb9b9';
+    let colorHex_cm1 = params.get('cm1') || colorHex_cm2;
+
+    let timeColorHex = params.get('tc') || colorHex_cm2;
     let barHeight = params.get('bh') || '4px';
     let thumbSize = params.get('ts') || '12px';
     let playSize = params.get('ps') || '20px';
     let customIcon = params.get('icon') || 'fa-circle';
 
-    colorHex = colorHex.replace('#', '');
+    colorHex_cm1 = colorHex_cm1.replace('#', '');
+    colorHex_cm2 = colorHex_cm2.replace('#', '');
     timeColorHex = timeColorHex.replace('#', '');
 
-    document.documentElement.style.setProperty('--pptradke-cm2', '#' + colorHex);
+    document.documentElement.style.setProperty('--color-thumb', '#' + colorHex_cm1);
+    document.documentElement.style.setProperty('--pptradke-cm2', '#' + colorHex_cm2);
     document.documentElement.style.setProperty('--time-color', '#' + timeColorHex);
     document.documentElement.style.setProperty('--bar-height', barHeight.includes('px') ? barHeight : barHeight + 'px');
     document.documentElement.style.setProperty('--thumb-size', thumbSize.includes('px') ? thumbSize : thumbSize + 'px');
