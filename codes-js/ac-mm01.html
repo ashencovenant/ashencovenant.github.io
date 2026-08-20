@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0-beta3/css/pro.min.css">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: transparent; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    
     .ac-mm01-player-card {
       display: flex;
       flex-direction: column;
@@ -43,7 +46,7 @@
       color: var(--pptradke-cm2, #bbb9b9);
       font-size: var(--thumb-size, 12px);
       transition: transform 0.1s ease;
-      pointer-events: none;
+      pointer-events: none; 
       z-index: 2;
     }
 
@@ -94,7 +97,7 @@
 
     <div class="ac-mm01-time-container">
       <span id="time-current">0:00</span>
-      <span id="time-remaining">-0:00</span>
+      <span id="time-total">0:00</span>
     </div>
 
     <div class="ac-mm01-controls">
@@ -112,12 +115,16 @@
     let colorHex = params.get('cm2') || params.get('color') || 'bbb9b9';
     let barHeight = params.get('bh') || '4px';
     let thumbSize = params.get('ts') || '12px';
-    let customIcon = params.get('icon') || 'fa-circle'; // Icono por defecto
+    let playSize = params.get('ps') || '20px';
+    let customIcon = params.get('icon') || 'fa-circle';
 
     colorHex = colorHex.replace('#', '');
     document.documentElement.style.setProperty('--pptradke-cm2', '#' + colorHex);
     document.documentElement.style.setProperty('--bar-height', barHeight.includes('px') ? barHeight : barHeight + 'px');
     document.documentElement.style.setProperty('--thumb-size', thumbSize.includes('px') ? thumbSize : thumbSize + 'px');
+
+    const playBtnIcon = document.querySelectorAll('.ac-mm01-playbtn i');
+    playBtnIcon.forEach(i => i.style.fontSize = playSize.includes('px') ? playSize : playSize + 'px');
 
     const audio = document.getElementById('ac-mm01-audio');
     const trigger = document.getElementById('ac-mm01-musictrigger');
@@ -125,18 +132,22 @@
     const fill = document.getElementById('progress-fill');
     const thumb = document.getElementById('thumb-icon');
     const timeCurrent = document.getElementById('time-current');
-    const timeRemaining = document.getElementById('time-remaining');
+    const timeTotal = document.getElementById('time-total');
 
     thumb.className = `fa-solid ${customIcon} ac-mm01-thumb-icon`;
 
     if (audioUrl) { audio.src = audioUrl; }
 
     function formatTime(seconds) {
-      if (isNaN(seconds)) return "0:00";
+      if (isNaN(seconds) || seconds === Infinity) return "0:00";
       const mins = Math.floor(seconds / 60);
       const secs = Math.floor(seconds % 60);
       return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
     }
+
+    audio.addEventListener('loadedmetadata', () => {
+      timeTotal.textContent = formatTime(audio.duration);
+    });
 
     trigger.addEventListener('change', () => {
       trigger.checked ? audio.play() : audio.pause();
@@ -149,8 +160,10 @@
       thumb.style.left = `${pct}%`;
 
       timeCurrent.textContent = formatTime(audio.currentTime);
-      const remaining = audio.duration - audio.currentTime;
-      timeRemaining.textContent = `-${formatTime(remaining)}`;
+
+      if (timeTotal.textContent === "0:00" && audio.duration) {
+        timeTotal.textContent = formatTime(audio.duration);
+      }
     });
 
     function setAudioPosition(e) {
@@ -175,7 +188,6 @@
       fill.style.width = '0%';
       thumb.style.left = '0%';
       timeCurrent.textContent = "0:00";
-      timeRemaining.textContent = `-${formatTime(audio.duration)}`;
     });
   </script>
 </body>
