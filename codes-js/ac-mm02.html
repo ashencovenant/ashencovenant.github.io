@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0-beta3/css/pro.min.css">
   <style>
+
     .ac-mm02-controls {
       display: flex;
       justify-content: center;
@@ -13,7 +14,7 @@
     #ac-mm02-musictrigger { display: none !important; }
 
     .ac-mm02-playbtn i {
-      color: var(--pptradke-cm2, #bbb9b9);
+      color: var(--color-icon, #bbb9b9);
       font-size: var(--play-size, 24px);
       cursor: pointer;
       transition: transform 0.2s ease;
@@ -45,11 +46,16 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const audioUrl = params.get('song');
-    let colorHex = params.get('cm2') || params.get('color') || 'bbb9b9';
+
+    let colorHex_cm2 = params.get('cm2') || params.get('color') || 'bbb9b9';
+    let colorHex_cm1 = params.get('cm1') || colorHex_cm2;
     let playSize = params.get('ps') || '24px';
 
-    colorHex = colorHex.replace('#', '');
-    document.documentElement.style.setProperty('--pptradke-cm2', '#' + colorHex);
+    colorHex_cm1 = colorHex_cm1.replace('#', '');
+    colorHex_cm2 = colorHex_cm2.replace('#', '');
+
+    document.documentElement.style.setProperty('--color-icon', '#' + colorHex_cm1);
+    document.documentElement.style.setProperty('--pptradke-cm2', '#' + colorHex_cm2);
     document.documentElement.style.setProperty('--play-size', playSize.includes('px') ? playSize : playSize + 'px');
 
     const audio = document.getElementById('ac-mm02-audio');
