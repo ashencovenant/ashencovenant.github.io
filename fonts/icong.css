@@ -66,3 +66,67 @@
 .icong-spiky-eclipse:before { content: '\e80b'; } /* '' */
 .icong-transfuse:before { content: '\e80c'; } /* '' */
 .icong-wolf-howl:before { content: '\e80d'; } /* '' */
+
+
+
+@font-face {
+    font-family: "icong1";
+    src: 
+      url('https://od.lk/s/OTBfNTY0OTY4NDhfZU93N2Y/vknife.otf') format('embedded-opentype'),
+      url("https://od.lk/s/OTBfNTY0OTY4NTBfZ3dWOXo/vknife.woff") format("woff2"),
+        url("https://od.lk/s/OTBfNTY0OTY4NDlfeENraTk/vknife.ttf") format("truetype"),
+        url("https://od.lk/s/OTBfNTY0OTY4NTBfZ3dWOXo/vknife.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.icon {
+    /* Use !important to prevent extensions from overriding this font. */
+    font-family: "icong1" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icong1-"]:before, [class*=" icong1-"]:before {
+  font-family: "icong1";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icong1-vknife:before { content: '\e800'; }
