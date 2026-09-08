@@ -72,10 +72,9 @@
 @font-face {
     font-family: "icong1";
     src: 
-      url('https://od.lk/s/OTBfNTY0OTY4NDhfZU93N2Y/vknife.otf') format('embedded-opentype'),
-      url("https://od.lk/s/OTBfNTY0OTY4NTBfZ3dWOXo/vknife.woff") format("woff2"),
-        url("https://od.lk/s/OTBfNTY0OTY4NDlfeENraTk/vknife.ttf") format("truetype"),
-        url("https://od.lk/s/OTBfNTY0OTY4NTBfZ3dWOXo/vknife.woff") format("woff");
+      url('https://file.garden/aqCJxtObA8kd5065/vknife.otf') format('opentype'),
+        url("https://file.garden/aqCJxtObA8kd5065/vknife.ttf") format("truetype"),
+        url("https://file.garden/aqCJxtObA8kd5065/vknife.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: block;
