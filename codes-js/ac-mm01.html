@@ -4,13 +4,19 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0-beta3/css/pro.min.css">
   <style>
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100%;
+      height: 25px;
+      overflow: hidden;
+      background: transparent;
+    }
+
     body {
-    margin: 0px !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
     }
 
     .ac-musicplayer {
@@ -86,6 +92,12 @@
     const params = new URLSearchParams(window.location.search);
     const audioUrl = params.get('song');
     
+    const customHeight = params.get('height');
+    if (customHeight) {
+      document.documentElement.style.height = customHeight + 'px';
+      document.body.style.height = customHeight + 'px';
+    }
+
     let colorHex_cm2 = params.get('cm2') || params.get('color') || 'bbb9b9';
     let colorHex_cm1 = params.get('cm1') || colorHex_cm2;
 
