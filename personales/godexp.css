@@ -1,0 +1,166 @@
+<!--
+
+
+Code by @ashencovenant
+  https://ashencovenant.tumblr.com/
+Support me: https://ko-fi.com/ashencovenant
+
+
+-->
+
+.acexp-00 {
+  width: 800px;
+  height: 600px;
+  margin: 100px auto 0px;
+  position: relative;
+
+}
+
+.acexp-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.4) grayscale(100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.acexp-colorg, .acexp-bgname {
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--acf-c1) 0%, transparent 110%);
+  position: absolute;
+  left: 40px;
+  top: 0;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  pointer-events: none;    
+}
+
+.acexp-bgname {
+  background: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: normal;
+}
+
+.acexp-name {
+  color: var(--acf-c1);
+  font: 200px "Gloock";
+}
+
+.acexp-bggen {
+  width: 350px;
+  height: 100%;
+  background: #0000007a;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: 0px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d3d3d3;
+}
+
+.acexp-bcirf {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent; 
+  border-image: linear-gradient(-135deg, var(--acf-c1), var(--acf-c2)) 1;
+  outline: 10px solid var(--acf-c2);
+  background: var(--acf-c2);
+}
+
+.acexp-bcirf i {
+  color: var(--acf-c1);
+  font-size: 40px;
+  background-image: linear-gradient(180deg, var(--acf-c1) 0%, transparent 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.acexp-bpb {
+  font: 11px Calibri;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: var(--acf-c3);
+  margin-right: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-left: 3px solid var(--acf-c1);
+  width: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: var(--acf-c1);
+  font-weight: 900;
+}
+
+.acexp-gencit {
+  background: #000;
+  width: 300px;
+  margin-top: 30px;
+  font: 10px Calibri;
+  text-align: justify;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.acexp-gentext {
+  width: 300px;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  overflow: auto;
+  font: 13px Calibri;
+  text-align: justify;
+  counter-reset: sepa-count;
+}
+
+.acexp-gentext::-webkit-scrollbar {
+  display: none;
+}
+
+.acexp-gensepa {
+  width: 100%;
+  height: 50px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  font: 20px Gloock;
+  font-weight: 500;
+  counter-increment: sepa-count;
+  margin-bottom: 5px;
+}
+
+.acexp-gensepa::before {
+  content: counter(sepa-count, decimal-leading-zero);
+  display: inline-block;
+  margin-right: 8px;
+  width: 40px;
+  height: 100%;
+  background: var(--acf-c1);
+  color: var(--acf-c4);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.accredi { margin: 10px auto; text-align: center; } .accredi a { font: 9px Calibri; text-transform: uppercase; text-decoration: none; color: #c3c3c3; display: inline-flex; align-items: baseline; } .accredi a .accredhidden { display: inline-block; max-width: 0; overflow: hidden; white-space: nowrap; opacity: 0; transition: max-width 0.4s ease, opacity 0.3s ease; } .accredi a:hover .accredhidden { max-width: 120px; opacity: 1; } .edivar { display: none !important; } .acexp-00 *::selection { background: var(--acf-c1); color: var(--acf-c4); }
