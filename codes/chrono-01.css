@@ -82,6 +82,7 @@ Support me: https://ko-fi.com/ashencovenant
   background: var(--accolor-2);
   mix-blend-mode: multiply;
   pointer-events: none;
+  display: var(--acdisp);
 }
 
 .crono-01-dec {
