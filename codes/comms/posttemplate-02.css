@@ -1,0 +1,126 @@
+/*
+Code by @ashencovenant
+Uploaded: 13/11/2026
+Do not remove credits.
+Site: https://ashencovenant.tumblr.com/
+Support me: https://ko-fi.com/ashencovenant
+*/
+
+
+.grurolash_ {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.grurolash_ .posttemp-02 {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    color: var(--accolorfont);
+}
+
+.grurolash_ .posttemp-02-dec {
+  width: 100px;
+  height: 600px;
+  background: linear-gradient(0deg, var(--accolor-1) 0%, var(--accolor-1a) 100%); 
+
+  -webkit-mask-image: url('https://ashencovenant.github.io/iconsvg/tablillapngg.svg');
+  mask-image: url('https://ashencovenant.github.io/iconsvg/tablillapngg.svg');
+  -webkit-mask-size: 150% 150%;
+  mask-size: 150% 150%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.grurolash_ .posttemp-02-cir {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    background-size: cover !important;
+}
+
+.grurolash_ .posttemp-02-der {
+    width: calc(100% - 100px);
+    height: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grurolash_ .posttemp-02-text {
+    width: 70%;
+    height: 70%;
+    overflow: auto;
+    color: var(--accolorfont);
+    text-align: justify;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font: 14px "Source Sans 3";
+}
+
+.grurolash_ .posttemp-02-text::-webkit-scrollbar {
+    width: 2px !important; 
+}
+
+.grurolash_ .posttemp-02-text::-webkit-scrollbar-track {
+    background: transparent !important;
+    border-radius: 10px !important;
+}
+
+.grurolash_ .posttemp-02-text::-webkit-scrollbar-thumb {
+    background: var(--accolor-2) !important; 
+    border-radius: 10px !important;
+}
+
+.grurolash_ .posttemp-02-text::-webkit-scrollbar-thumb:hover {
+    background: transparent !important; 
+}
+
+.accredi { 
+    margin: 10px auto; 
+    text-align: center; 
+} 
+
+.accredi a { 
+    font: 9px Calibri; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    color: #c3c3c3; 
+    display: inline-flex; 
+    align-items: baseline;
+} 
+
+.accredi a .accredhidden { 
+    display: inline-block; 
+    max-width: 0; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    opacity: 0; 
+    transition: max-width 0.4s ease, opacity 0.3s ease; 
+} 
+
+.accredi a:hover .accredhidden { 
+    max-width: 120px; 
+    opacity: 1; 
+} 
+
+.edivar { 
+    display: none !important; 
+} 
+
+.grurolash_ *::selection { 
+    background: var(--accolor-2); 
+    color: var(--accolorfs); 
+}
